@@ -8,6 +8,17 @@
 </head>
 <body>
 
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Brand</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <div class="sign-up">
+        <%= link_to "create an account", sign_up_path %>
+      </div>
+    </ul>
+  </nav>
+
   <div class="container">
 
     <%= flash[:notice] %>
