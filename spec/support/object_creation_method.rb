@@ -6,3 +6,10 @@ def create_user(options={})
   }
   User.create!(defaults.merge(options))
 end
+
+def create_post(options={})
+  defaults = {
+    title: 'My New Post',
+  }
+  Post.create!(defaults.merge(options))
+end
