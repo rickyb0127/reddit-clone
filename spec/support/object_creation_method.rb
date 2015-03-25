@@ -1,9 +1,8 @@
 def create_user(options={})
   defaults = {
-    first_name: 'Joe',
-    last_name: 'Person',
-    email: 'jp@example.com',
-    password: 'wookie'
+    username: 'testman',
+    password: 'wookie',
+    email: 'tm@example.com'
   }
   User.create!(defaults.merge(options))
 end
