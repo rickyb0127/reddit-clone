@@ -1,0 +1,31 @@
+<h3>CREATE A NEW ACCOUNT</h3>
+
+<div class="form-horizontal">
+  <%= form_for @user, url: sign_up_path do |f| %>
+  <div class="form-group">
+    <div class="col-md-4">
+      <%= f.text_field :username, class: "form-control", placeholder: "choose username" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4">
+      <%= f.password_field :password, class: "form-control", placeholder: "password" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4">
+      <%= f.password_field :password_confirmation, class: "form-control", placeholder: "verify password" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4">
+      <%= f.email_field :email, class: "form-control", placeholder: "email (optional)" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-md-offset-2">
+      <%= f.submit "CREATE ACCOUNT", class: "btn btn-primary" %>
+    </div>
+  </div>
+  <% end %>
+</div>
